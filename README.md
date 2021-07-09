@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## How to deploy to GitHub Pages
+
+Run `ng build --prod`.
+
+This will create the production website and put it in the directory called docs. Push this to the main branch in Github. Github will create the page based off of what is found in the docs directory.
