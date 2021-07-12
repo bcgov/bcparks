@@ -5,13 +5,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Base
-@import "/src/assets/base/base.scss";
+@import "./assets/base/base.scss";
 
 // Typography
-@import "/src/assets/base/typography.scss";
+@import "./assets/base/typography.scss";
 
 // Material Icons
-@import "/src/assets/base/material-icons.scss";
+@import "./assets/base/material-icons.scss";
 
 body,
 html {

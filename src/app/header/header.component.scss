@@ -1,8 +1,8 @@
-@import "/src/assets/base/base.scss";
+@import "../../assets/base/base.scss";
 
-.sub-header{
+.sub-header {
     height: 40px;
-    width:100%;
+    width: 100%;
     background-color: $bg-header-secondary;
     border-top: 2px solid $gold;
 }
@@ -215,14 +215,14 @@
     white-space: normal;
 }
 
-.bc-gov-logo{
-    height:60%;
+.bc-gov-logo {
+    height: 60%;
     margin: 10px 13px 0 0;
     padding-right: 10px;
-    border-right:1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
-.bc-parks-title{
+.bc-parks-title {
     height: 60%;
     margin-top: 10px;
 }
