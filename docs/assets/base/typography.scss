@@ -4,7 +4,11 @@
 }
 
 body {
-  font-family: "BCSans", "Noto Sans", sans-serif;
-  src: url("../fonts/BCSans/BCSans-Regular.woff2") format("woff2"),
-    url("../fonts/BCSans/BCSans-Regular.woff") format("woff");
+  font-family: "BCSans", Fallback, sans-serif;
+}
+
+@font-face {
+  font-family: "BCSans";
+  src: url("/assets/fonts/BCSans-Regular.woff2") format("woff2"),
+    url("/assets/fonts/BCSans-Regular.woff") format("woff");
 }
