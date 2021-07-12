@@ -7,13 +7,9 @@
 // Base
 @import "./assets/base/base.scss";
 
-// Typography
-@import "./assets/base/typography.scss";
-
 // Material Icons
-@import "./assets/base/material-icons.scss";
+@import "~material-icons/iconfont/material-icons.css";
 
-body,
-html {
-  height: 100%;
+body {
+  font-family: "BCSans", "Noto Sans", sans-serif !important;
 }
