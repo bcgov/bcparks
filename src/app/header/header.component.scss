@@ -1,35 +1,5 @@
 @import "/src/assets/base/base.scss";
 
-.env-banner {
-    padding: 5px 10px;
-    z-index: 10000;
-
-    &.red {
-        background-color: #ff8e8e;
-        color: #a70404;
-    }
-
-    &.orange {
-        background-color: #ffd47e;
-        color: #bd7e02;
-    }
-
-    &.yellow {
-        background-color: #f1ef63;
-        color: #98980f;
-    }
-
-    &.green {
-        background-color: #aaf1a0;
-        color: #057713;
-    }
-
-    &.purple {
-        background-color: #d39eff;
-        color: #8c00ff;
-    }
-}
-
 .sub-header{
     height: 40px;
     width:100%;
