@@ -26,8 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## How to deploy to GitHub Pages
+## Deploying to Github Pages
 
-Run `ng build --prod`.
+To deploy, commit your changes to the main branch.
 
-This will create the production website and put it in the directory called docs. Push this to the main branch in Github. Github will create the page based off of what is found in the docs directory.
+There is a Github actions script that will handle deploying to Github Pages. This action essentially runs ng build --prod and generates a dist folder. This dist folder is then uploaded to the branch called gh-pages. Github Pages automatically deploys whatever is in the root level of the gh-pages branch.
