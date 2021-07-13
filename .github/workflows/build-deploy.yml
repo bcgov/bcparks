@@ -23,6 +23,18 @@ jobs:
       run: |
         npm install
         npm run-script deploy
+    - name: Generate 404.html
+      jobs:
+        build:
+          name: Build
+          runs-on: ubuntu-latest
+          steps:
+          - uses: actions/checkout@master
+          - name: copy file
+            uses: canastro/copy-file-action@master
+            with:
+              source: "dist/bcparks/index.html"
+              target: "dist/bcparks/404.html"
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
