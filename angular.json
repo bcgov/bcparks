@@ -17,19 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
-            "baseHref": "/bcparks/",
+            "outputPath": "dist/bcparks",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/assets"
+              "src/assets",
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fonts/BCSans.css",
+              "src/assets/fonts/BCSans.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
