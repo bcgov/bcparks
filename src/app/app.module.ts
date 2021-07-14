@@ -11,6 +11,7 @@ import { DesignGuidesComponent } from './design-guides/design-guides.component';
 import { GithubSourceComponent } from './github-source/github-source.component';
 import { CollaboratePageComponent } from './collaborate-page/collaborate-page.component';
 import { EngagePageComponent } from './engage-page/engage-page.component';
+import { MainJumbotronComponent } from './main-jumbotron/main-jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EngagePageComponent } from './engage-page/engage-page.component';
     DesignGuidesComponent,
     GithubSourceComponent,
     CollaboratePageComponent,
-    EngagePageComponent
+    EngagePageComponent,
+    MainJumbotronComponent
   ],
   imports: [
     BrowserModule,
