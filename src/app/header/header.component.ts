@@ -11,7 +11,6 @@ export class HeaderComponent {
   constructor(private router: Router) {
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
-        console.log(val);
         this.currentPage = val.url;
       }
     });

@@ -2,7 +2,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
+@import "./assets/styles/bc-gov/bootstrap-theme.scss";
 
 // Base
 @import "./assets/base/base.scss";
@@ -10,11 +11,7 @@
 // Material Icons
 @import "~material-icons/iconfont/material-icons.css";
 
-html {
-  height: 100%;
-}
-
+html,
 body {
   height: 100%;
-  font-family: "BCSans", "Noto Sans", sans-serif !important;
 }
