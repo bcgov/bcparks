@@ -1,7 +1,22 @@
 @import "../assets/base/base.scss";
 @import "../assets/base/helpers.scss";
 
-.container {
-    background-color: white;
-    height: 100%
+.jumbo-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url("../assets/images/0002-00PCLD0172.jpg");
+}
+
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-wrapper {
+    padding-bottom: 3rem;
+}
+
+.jumbotron-section {
+    margin-bottom: 3rem;
 }
