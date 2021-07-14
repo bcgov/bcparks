@@ -21,7 +21,7 @@ const routes: Routes = [
     component: DesignGuidesComponent
   },
   {
-    path: 'github-source',
+    path: 'projects',
     component: GithubSourceComponent
   },
   {
