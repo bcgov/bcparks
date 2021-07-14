@@ -13,9 +13,14 @@
 }
 
 .main-wrapper {
-    padding-bottom: 3rem;
+    padding-bottom: 70px;
+    background-color: $bg-secondary;
 }
 
 .jumbotron-section {
     margin-bottom: 3rem;
+}
+
+.jumbotron {
+    border-radius: 0;
 }
