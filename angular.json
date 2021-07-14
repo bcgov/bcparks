@@ -28,8 +28,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fonts/BCSans.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/assets/styles/bc-gov/_fonts.scss",
+              "src/assets/styles/bc-gov/bootstrap-theme.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
