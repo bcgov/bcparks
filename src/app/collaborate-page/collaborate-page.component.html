@@ -1,1 +1,124 @@
-<p>collaborate-page works!</p>
+<section class="section-block">
+    <h1>Collaborate With Us</h1>
+    <p>
+        Would you like to contribute but new to Github? Below is information that will help you through the process, if
+        you need further assistance, please contact xxxxxxxxx
+    </p>
+</section>
+<section class="section-block">
+    <h3>Resolving and Actioning Issues</h3>
+    <p>
+        When actioning an issue, consider
+        <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">
+            linking your pull request
+        </a>. This not only allows for collaborators to see who
+        is working on what issues, but it also makes it so that the issue is automatically closed when the pull request
+        is merged.
+    </p>
+    <p>
+        Furthermore, take some time to consider what kind of change you are making. Is it a
+        <a href="https://bcgov.github.io/ExchangeLabOps/contribute#small-changes">small change</a>, or a
+        <a href="https://bcgov.github.io/ExchangeLabOps/contribute#big-changes">big
+            change</a>? This may determine how you resolve the issue.
+    </p>
+</section>
+<section class="section-block">
+    <h3>Small Changes</h3>
+    <p>
+        If you are just making small changes to a few words in one file (likely a
+        <a href="https://bcgov.github.io/ExchangeLabOps/contribute#a-note-on-markdown">Markdown</a> file), then it would
+        be
+        acceptable and easy to use the <a
+            href="https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/editing-files-in-your-repository">GitHub
+            file editor</a> on the <a href="https://github.com/bcgov/CITZ-IMB-playbook">bcgov repo</a>. This is not
+        advisable for larger changes,
+        or if you plan on making changes to multiple pages.
+    </p>
+</section>
+<section class="section-block">
+    <h3>Big Changes</h3>
+    <p>
+        You will need a foundational understanding of Git and GitHub concepts, such as repos, commits, and
+        <a
+            href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull
+            requests</a>, for submitting larger contributions.
+    </p>
+    <p>
+        When you submit a contribution for adding, changing, or removing content you will have to submit a pull request,
+        which will be reviewed.
+    </p>
+    <p>
+        If you are making big structural or visual changes to the playbook, we suggest that you get set up for local
+        development on your computer. This increases efficiency by allowing you to preview the changes you are making in
+        real time, and it reduces the risk of pushing errors to production.
+    </p>
+    <p>
+        Before proceeding read <a href="https://github.com/18F/uswds-jekyll/blob/main/README.md">this page</a>.
+    </p>
+    <p>
+        Follow these steps when making big changes:
+    </p>
+    <ul>
+        <li>
+            Make a <a href="https://docs.github.com/en/enterprise/2.13/user/articles/fork-a-repo">forks</a> of the
+            <a href="https://github.com/bcgov/CITZ-IMB-playbook">bcgov repo</a>
+        </li>
+        <li>
+            Enable <a
+                href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">GitHub
+                Pages</a> on the forked repo
+        </li>
+        <li>
+            <a
+                href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository">Clone</a>
+            the fork to your local machine
+        </li>
+        <li>
+            Issue the following commands to push the changes to your forked repo:
+        </li>
+        <div class="py-4">
+            <i>
+                git add .git commit -m “Meaningful message about your changes” git push origin master
+            </i>
+        </div>
+        <li>
+            Ensure everything looks good on your forked GitHub Pages site
+            <ul>
+                <li>
+                    Note: the way GitHub Pages compiles your website may differ than what you see during local
+                    development.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Make a <a
+                href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull
+                requests</a>
+        </li>
+    </ul>
+</section>
+<section class="section-block">
+    <h3>A Note on Versioning</h3>
+    <p>
+        If the changes you are making to the site are quite large, consider creating a new version release. Please
+        consult these resources before creating a new version:
+    </p>
+    <ul>
+        <li>
+            <a
+                href="https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/managing-releases-in-a-repository">Version
+                releases with GitHub</a>
+        </li>
+        <li>
+            <a href="https://semver.org/">Version tagging concepts</a>
+        </li>
+    </ul>
+</section>
+<section class="section-block">
+    <h3>A Note on Markdown</h3>
+    <p>
+        The Markdown files that hold the playbook content live in the “plays” and “pages” folders. If you are unfamiliar
+        with Markdown,
+        <a href="https://www.markdownguide.org/basic-syntax/">this</a> is a good place to get started.
+    </p>
+</section>
