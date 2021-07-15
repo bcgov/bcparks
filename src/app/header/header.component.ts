@@ -15,4 +15,8 @@ export class HeaderComponent {
       }
     });
   }
+
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
 }
