@@ -1,3 +1,36 @@
-.section-block{
+@import "../../assets/base/base.scss";
+
+.section-block {
     margin-bottom: 60px;
+}
+
+.item {
+    opacity: 100%;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.item:hover {
+    opacity: 60%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.section-header {
+    border-bottom: 3px solid $gold;
+    color: $header-bg;
+}
+
+.image-section {
+    position: absolute;
+    bottom: 0;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
