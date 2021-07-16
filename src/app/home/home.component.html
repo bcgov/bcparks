@@ -32,7 +32,8 @@
 
 <section class="section-block">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 item"
+            (click)="navigate('digital-strategy')">
             <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
                     <div class="p-4">
@@ -50,7 +51,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 item"
+            (click)="navigate('projects')">
             <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
                     <div class="p-4">
@@ -62,14 +64,14 @@
                         Projects
                     </h4>
                     <p>
-                        This repo contains...
+                        See what we’re working on
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 item" (click)="navigate('design-guides')">
             <div class="d-flex align-items-center">
                 <div class="flex-shrink-0">
                     <div class="p-4">
@@ -86,8 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="d-flex align-items-center">
+        <div class="col-md-6 item">
+            <div class="d-flex align-items-center" (click)="navigate('collaborate')">
                 <div class="flex-shrink-0">
                     <div class="p-4">
                         <span class="material-icons">group_work</span>
@@ -105,8 +107,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
-            <div class="d-flex align-items-center">
+        <div class="col-md-6 item">
+            <div class="d-flex align-items-center" (click)="navigate('engage')">
                 <div class="flex-shrink-0">
                     <div class="p-4">
                         <span class="material-icons">feedback</span>
