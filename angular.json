@@ -28,7 +28,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/styles/bc-gov/_fonts.scss",
               "src/assets/styles/bc-gov/bootstrap-theme.scss"
             ],
             "scripts": [
