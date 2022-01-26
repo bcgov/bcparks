@@ -1,32 +1,40 @@
 <section class="section-block">
-    <i>Coming Soon!</i>
-    <!-- <h1>
-        Design Guides
-    </h1>
+  <div class="row">
+    <h1>Design Guides</h1>
     <p>
-        BC Parks has created design guides using BC government styling to ensure a consistent and streamlined look
-        and
-        feel in all applications.
-    </p> -->
+      BC Parks has created design guides using BC government styling to ensure a
+      consistent and streamlined look and feel in all applications.
+    </p>
+  </div>
 </section>
 
-<section class="section-block card-section">
-    <!-- <div class="card-deck">
-        <div class="card shadow border-0">
-            <div class="d-flex justify-content-center">
-                <span class="material-icons">dashboard</span>
-            </div>
-            <div class="card-body text-center">
-                <h3 class="card-title">BC Parks Design and Layout Guide</h3>
-            </div>
-        </div>
-        <div class="card shadow border-0">
-            <div class="d-flex justify-content-center">
-                <span class="material-icons">nature_people</span>
-            </div>
-            <div class="card-body text-center">
-                <h3 class="card-title">BC Parks Style guide</h3>
-            </div>
-        </div>
-    </div> -->
+<section class="section-block">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+          <div class="card h-100 shadow"
+              (click)="goToLink(pdfUrl)">
+              <div class="card-body">
+                  <h4 class="card-title pb-2">BC Parks Branding Guidelines</h4>
+                  <p class="card-text">BC Parks Graphic Standards Manual & Brand Guide.</p>
+              </div>
+              <div class="card-footer">
+                  <img class="icon mr-2"
+                      src="./assets/images/pdf-logo.svg">
+              </div>
+          </div>
+      </div>
+      <div class="col mb-4">
+          <div class="card h-100 shadow"
+              (click)="goToLink('https://github.com/digitalspace/bcparks-bootstrap-theme')">
+              <div class="card-body">
+                  <h4 class="card-title pb-2">BC Parks Bootstrap Theme - Design Guide</h4>
+                  <p class="card-text">A custom BC Parks Bootstrap Theme.</p>
+              </div>
+              <div class="card-footer">
+                  <img class="icon mr-2"
+                      src="./assets/images/bootstrap-logo-black.svg">
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
