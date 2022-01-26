@@ -4,14 +4,28 @@
 }
 
 .card {
-    border: 1px solid #f0f0f0;
-    border-radius: 25px;
+    opacity: 100%;
+    transition: 0.3s;
     padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 100%;
+}
+
+.card:hover {
+    opacity: 60%;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .material-icons {
     font-size: 75px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
 }
