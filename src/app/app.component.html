@@ -1,9 +1,16 @@
-<app-header></app-header>
-<div class="main-wrapper">
-  <app-main-jumbotron></app-main-jumbotron>
-  <div class="container">
-    <router-outlet>
-    </router-outlet>
+<div class="box">
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div class="content" fxFlex fxLayout="column">
+    <div class="main-wrapper">
+      <app-main-jumbotron></app-main-jumbotron>
+      <div class="container">
+        <router-outlet> </router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
   </div>
 </div>
-<app-footer></app-footer>
