@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
 })
 export class DesignGuidesComponent implements OnInit {
 
-  public relativeUrl = '/assets/objects/BC_Parks_Brand_Guidelines_Jan7_2022.pdf';
+  public relativeUrl = '/assets/objects/BC_Parks_Brand_Guidelines_Mar07_2022.pdf';
   public siteUrl = 'https://bcgov.github.io/bcparks';
   public pdfUrl = '.' + this.relativeUrl;
 
