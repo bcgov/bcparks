@@ -1,0 +1,32 @@
+@import "../../assets/base/base.scss";
+
+.card-section {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.card {
+  opacity: 100%;
+  transition: 0.3s;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 0px;
+  height: 100%;
+}
+
+.card:hover {
+  opacity: 60%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  height: 36px;
+}
