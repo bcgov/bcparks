@@ -8,29 +8,28 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    - uses: actions/setup-node@v1 #this installs node and npm for us
-      with:
-        node-version: '10.x'
-    - uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-    
-    - name: Build
-      run: |
-        npm install
-        npm run-script deploy
-    - name: Generate 404.html
-      uses: canastro/copy-file-action@master
-      with:
-        source: "dist/bcparks/index.html"
-        target: "dist/bcparks/404.html"
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist/bcparks
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      ### Install if no cache exists ###
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          cache: "yarn"
+      - run: yarn install --silent --frozen-lockfile
+
+      - name: Build
+        run: |
+          yarn deploy
+      - name: Generate 404.html
+        uses: canastro/copy-file-action@master
+        with:
+          source: "dist/bcparks/index.html"
+          target: "dist/bcparks/404.html"
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist/bcparks

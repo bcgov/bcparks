@@ -1,8 +1,8 @@
-@import "../../assets/base/base.scss";
+@import "/src/assets/themes/variables";
 
 .navbar {
-  background-color: $bg-header-secondary;
-  border-top: 2px solid $gold;
+  background-color: $primary;
+  border-top: 2px solid $bcgold;
 }
 
 .nav-link {
@@ -12,18 +12,18 @@
 }
 
 .nav-link:hover {
-  color: $gold !important;
+  color: $bcgold !important;
   text-decoration: underline;
-  text-decoration-color: $gold !important;
+  text-decoration-color: $bcgold !important;
 }
 
 .navbar-toggler {
-  border-color: $gold;
+  border-color: $bcgold;
 }
 
 .app-header {
-  background: $header-bg;
-  color: $header-font-color;
+  background: $primary-nav;
+  color: white;
   height: 5.625rem;
   padding-top: 5px;
 }
@@ -34,7 +34,7 @@
 }
 
 .active {
-  color: $gold !important;
+  color: $bcgold !important;
 }
 
 img:hover {

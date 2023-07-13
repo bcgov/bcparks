@@ -1,17 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
-// @import "~bootstrap/scss/bootstrap";
-@import "./assets/styles/bc-gov/bootstrap-theme.scss";
-
-// Base
-@import "./assets/base/base.scss";
+@import "/src/assets/themes/variables";
 
 // Material Icons
 @import "~material-icons/iconfont/material-icons.css";
 
+/* You can add global styles to this file, and also import other style files */
 html,
 body {
   height: 100%;
+  margin: 0;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 0.75s linear infinite;
+  -moz-animation: rotating 0.75s linear infinite;
+  -ms-animation: rotating 0.75s linear infinite;
+  -o-animation: rotating 0.75s linear infinite;
+  animation: rotating 0.75s linear infinite;
+}
+
+.spinner {
+  font-size: large;
+  color: $primary-blue;
+}
+
+.section-block {
+  margin-top: 60px;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .header {
+  flex: 0 1 auto;
+}
+
+.box .content {
+  flex: 1 1 auto;
+}
+
+.box .footer {
+  flex: 0 1 auto;
 }

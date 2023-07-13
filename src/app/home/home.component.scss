@@ -1,20 +1,20 @@
-@import "../../assets/base/base.scss";
+@import "/src/assets/themes/variables";
 
 .material-icons {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .item {
-    opacity: 100%;
-    transition: 0.3s;
+  opacity: 100%;
+  transition: 0.3s;
 }
 
-.material-icons{
-    color: $bg-header-secondary
+.material-icons {
+  color: $primary;
 }
 
 .item:hover {
-    opacity: 60%;
-    transition: 0.3s;
-    cursor: pointer;
+  opacity: 60%;
+  transition: 0.3s;
+  cursor: pointer;
 }

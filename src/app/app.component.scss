@@ -1,7 +1,7 @@
-@import "../assets/base/base.scss";
+@import "/src/assets/themes/variables";
 
 .main-wrapper {
   padding-bottom: 70px;
-  background-color: $bg-secondary;
+  background-color: white;
   min-height: 100%;
 }
