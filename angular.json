@@ -23,12 +23,20 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
+            "assets": [
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@digitalspace/ds-bcgov-map/lib/assets",
+                "output": "./assets"
+              }
+            ],
             "styles": [
               "node_modules/@digitalspace/bcparks-bootstrap-theme/dist/css/bootstrap-theme.min.css",
               "src/styles.scss"
             ],
             "scripts": ["node_modules/@digitalspace/bcparks-bootstrap-theme/dist/js/bootstrap-theme.min.js"],
+            "allowedCommonJsDependencies": ["jsts"],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,

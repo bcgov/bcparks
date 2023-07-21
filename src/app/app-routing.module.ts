@@ -6,36 +6,41 @@ import { DigitalStrategyComponent } from './digital-strategy/digital-strategy.co
 import { EngagePageComponent } from './engage-page/engage-page.component';
 import { GithubSourceComponent } from './github-source/github-source.component';
 import { HomeComponent } from './home/home.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'digital-strategy',
-    component: DigitalStrategyComponent
+    component: DigitalStrategyComponent,
   },
   {
     path: 'design-guides',
-    component: DesignGuidesComponent
+    component: DesignGuidesComponent,
   },
   {
     path: 'projects',
-    component: GithubSourceComponent
+    component: GithubSourceComponent,
   },
   {
     path: 'collaborate',
-    component: CollaboratePageComponent
+    component: CollaboratePageComponent,
   },
   {
     path: 'engage',
-    component: EngagePageComponent
-  }
+    component: EngagePageComponent,
+  },
+  {
+    path: 'map',
+    component: MapComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

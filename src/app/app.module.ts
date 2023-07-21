@@ -12,6 +12,8 @@ import { GithubSourceComponent } from './github-source/github-source.component';
 import { CollaboratePageComponent } from './collaborate-page/collaborate-page.component';
 import { EngagePageComponent } from './engage-page/engage-page.component';
 import { MainJumbotronComponent } from './main-jumbotron/main-jumbotron.component';
+import { DsBcgovMapModule } from '@digitalspace/ds-bcgov-map';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,11 @@ import { MainJumbotronComponent } from './main-jumbotron/main-jumbotron.componen
     GithubSourceComponent,
     CollaboratePageComponent,
     EngagePageComponent,
-    MainJumbotronComponent
+    MainJumbotronComponent,
+    MapComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [DsBcgovMapModule, BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
