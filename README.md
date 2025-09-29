@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 To deploy, commit your changes to the main branch.
 
 There is a Github actions script that will handle deploying to Github Pages. This action essentially runs ng build --prod and generates a dist folder. This dist folder is then uploaded to the branch called gh-pages. Github Pages automatically deploys whatever is in the root level of the gh-pages branch.
+
+## Hosting BC Parks PDFs
+
+BC Parks PDFs for design guidelines, etc. are stored in an AWS S3 bucket associated with the AWS Account for the [BC Parks Data Register project](https://github.com/bcgov/parks-data-register). To change or add additional files, add them to the github.io bucket and reference the file through the CloudFront distribution associated with that bucket. 
